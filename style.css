@@ -674,7 +674,6 @@ nav {
     .contact-form {
       flex: 1;
       padding: 20px;
-      text-transform: none;
     }
     .contact-form input, .contact-form textarea {
       width: 100%;
@@ -683,6 +682,7 @@ nav {
       border: 1px solid #0e0101;
       border-radius: 8px;
       font-size: 20px;
+      text-transform: none;
     }
     .contact-form textarea {
       resize: vertical;
