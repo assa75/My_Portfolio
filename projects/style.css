@@ -1,0 +1,220 @@
+* {
+   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Recommended: Import Roboto from Google Fonts */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+.btn {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.btn-small {
+    padding: 8px 15px;
+    font-size: 0.9em;
+}
+
+.highlight {
+    color: #007bff; /* Or any accent color you prefer */
+}
+
+.section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.bg-light {
+    background-color: #e9ecef;
+}
+
+/* Header & Navigation */
+header {
+    /*background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);*/
+    background: #fff;
+    color: #333;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.heading {
+  font-size: 3.5rem;
+  color: rgb(32, 32, 32);
+  font-weight: 800;
+  text-align: center;
+}
+.heading span {
+  color: rgb(115, 3, 167);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.9rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: #0e2431;
+}
+.logo:hover{
+    color: #fc8c05;
+}
+/*navbar*/
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin-left: 20px;
+}
+.nav-links a {
+    color: #333;
+    font-weight: bold;
+    padding: 5px 0;
+    position: relative;
+    font-size: 16px;
+}
+.nav-links a:hover {
+  color: #011aff;
+  border-bottom: 0.2rem solid #011aff;
+  padding: 0.5rem 0;
+}
+/* Projects Section */
+.project{
+  text-align: center;
+  padding: 20px 0px;
+  height: 2200px;
+  /*background: #d0b4cf;*/
+  background: #f3e9fb;
+}
+.project h2{
+    font-size: 45px;
+    /*margin-top: auto;*/
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 1rem 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    padding: 15px 20px 0;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    padding: 0 20px 15px;
+    font-size: 0.95em;
+    color: #4f4a4a;
+}
+
+.project-links {
+    padding: 0 20px 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.btn-small{
+  font-size: 16px;
+  color:#2506ad;
+}
+#projects button{
+  padding: 1rem 1.5rem;
+  border-radius: 0.5em;
+  transition: 0.3s;
+  color: #fff;
+  background: #2506ad;
+  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  margin-top: 20px;
+}
+#projects button:hover{
+  background: #e90712;
+}
+.button{
+    display: inline-block;
+    color: #111;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid black;
+    padding: 12px 25px;
+    transition: all .42s ease;
+    margin-top: 50px;
+}
+.button:hover{
+  background-color: #000;
+  color:#fff;
+}
