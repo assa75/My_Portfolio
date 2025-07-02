@@ -675,6 +675,9 @@ nav {
       flex: 1;
       padding: 20px;
     }
+    .e{
+       text-transform: none;
+    }
     .contact-form input, .contact-form textarea {
       width: 100%;
       padding: 12px;
