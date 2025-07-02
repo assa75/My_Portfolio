@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Restaurant Menu Card</title>
+        <style>
+            body{
+                background-image: url('https://t4.ftcdn.net/jpg/02/92/20/37/360_F_292203735_CSsyqyS6A4Z9Czd4Msf7qZEhoxjpzZl1.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;     
+            }
+            h3{
+              text-align: center;
+              color: #fff;
+              font-size: 20px;
+              margin-top: 40px;
+              font-style: italic ;
+            }
+            h1{
+               font-size: 30px ;
+               font-weight: bold;
+               text-align: center;
+               color: lightsalmon;
+            }
+            .navbar ul{
+                display: flex;
+                list-style-type: none;
+                justify-content: center;
+            }
+            .navbar a{
+                color: #fff;
+                font-size: 20px;
+                text-transform: capitalize;
+                padding: 10px 20px;
+                font-style: oblique;
+                font-weight: 600;
+                transition: all .42s ease;
+                text-decoration: none;
+            }
+            .navbar a:hover{
+                color: #FF8c00;
+            }
+            #breakfast-images img,
+            #lunch-images img,
+            #dinner-images img{
+                width: 250px;
+                height: auto;
+                border-radius: 10px;
+                gap: none; 
+            }
+            .hidden h4{
+                font-size: 20px;
+                color: #fff;
+                padding: 5px;
+                margin-left: 100px;
+                margin-top: -5px;
+            }
+            .hidden p{
+                margin-left: 120px;
+                margin-top: -20px;
+                color: #fff;
+            }
+            .hidden img:hover{
+              transform: scale(0.9);
+            }
+            .main{
+               display: none;
+               margin-left: 500px;
+               margin-top: 50px;
+            }
+            :target {
+                width: 600px;
+                height: 400px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;   
+            }
+
+        </style>
+    </head>
+    <body>
+        <h3>Discover</h3>
+        <h1>Our Menu</h1>
+        <nav class="navbar">
+        <ul>
+            <li><a href="#breakfast-images">Breakfast</a></li>
+            <li><a href="#lunch-images">Lunch</a></li>
+            <li><a href="#dinner-images">Dinner</a></li>
+        </ul>
+        </nav>
+        <section id="breakfast-images" class="main">
+          <div class="hidden">
+            <img src="f1.jpg">
+            <h4>4 IDLY</h4>
+            <p><b>20/-</b></p>
+            </div>
+          <div class="hidden">
+            <img src="f2.jpg">
+            <h4>2 PURI</h4>
+            <p><b>30/-</b></p>
+          </div>
+          <div class="hidden">
+            <img src="f3.jpg">
+            <h4>1 DOSA</h4>
+            <p><b>40/-</b></p>
+          </div>
+          <div class="hidden">
+            <img src="f4.jpg">
+            <h4>2 VADA</h4>
+            <p><b>10/-</b></p>
+          </div>
+        </section>
+        <section id="lunch-images" class="main">
+            <div class="hidden">
+              <img src="l1.jpg">
+              <h4>Mini Meals</h4>
+              <p><b>60/-</b></p>
+              </div>
+            <div class="hidden">
+              <img src="l2.jpg">
+              <h4>Full Meals</h4>
+              <p><b>80/-</b></p>
+            </div>
+            <div class="hidden">
+              <img src="l3.jpg">
+              <h4>Fish Meals</h4>
+              <p><b>120/-</b></p>
+            </div>
+            <div class="hidden">
+              <img src="l4.jpg">
+              <h4>Chicken Meals</h4>
+              <p><b>150/-</b></p>
+            </div>
+          </section>
+          <section id="dinner-images" class="main">
+            <div class="hidden">
+              <img src="d1.jpg">
+              <h4>ChickenFriedRice</h4>
+              <p><b>130/-</b></p>
+              </div>
+            <div class="hidden">
+              <img src="d2.jpg">
+              <h4>Noodles</h4>
+              <p><b>60/-</b></p>
+            </div>
+            <div class="hidden">
+              <img src="d3.jpg">
+              <h4>Egg FriedRice</h4>
+              <p><b>60/-</b></p>
+            </div>
+            <div class="hidden">
+              <img src="d4.jpg">
+              <h4>Chicken Biriyani</h4>
+              <p><b>150/-</b></p>
+            </div>
+          </section>
+    </body>
+</html>
