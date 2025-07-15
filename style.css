@@ -1,87 +1,163 @@
-/* Extra Mobile Responsiveness (below 600px) */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-@media (max-width: 600px) {
-  .hero-text h1 {
-    font-size: 2.8rem;
-  }
-  .hero-text h2 {
-    font-size: 1.8rem;
-  }
-  .hero-text h3 {
-    font-size: 1.2rem;
-  }
-  .image img {
-    width: 60%;
-    margin: 2rem auto;
-  }
-  .hero-buttons {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: #f2f2f2;
+  color: #333;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  color: #007BFF;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero a {
+  color: #007BFF;
+  font-weight: 600;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.hero a:hover {
+  text-decoration: underline;
+}
+
+/* Profile Image */
+.profile-img {
+  display: block;
+  max-width: 250px;
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px auto;
+  border: 5px solid #fff;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+  margin: 40px 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title i {
+  margin-right: 10px;
+}
+
+/* About Section */
+.about {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  nav {
     flex-direction: column;
-    gap: 15px;
+    align-items: flex-start;
   }
-  .btn {
-    margin-top: 1rem;
-  }
-  .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  }
-  .certificate-card {
-    width: 90%;
-    height: auto;
-    margin-left: 0;
-  }
-  .certificates-container {
-    grid-template-columns: 1fr;
-  }
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-  .edu-card {
+
+  nav ul {
     flex-direction: column;
-    height: auto;
-  }
-  .edu-card img {
     width: 100%;
-    height: auto;
+    margin-top: 10px;
   }
-  .contact-card {
-    flex-direction: column;
+
+  nav ul li {
+    margin: 10px 0;
   }
-  .contact-card img {
-    width: 100%;
-    height: auto;
+
+  .hero h1 {
+    font-size: 2rem;
   }
-  .contact-form button {
-    margin-left: 0;
-    width: 100%;
+
+  .hero p {
+    font-size: 1rem;
   }
-  .box-container {
-    flex-direction: column;
-    align-items: center;
+
+  .profile-img {
+    max-width: 200px;
   }
-  .box {
-    margin: 1rem 0;
+
+  .section-title {
+    font-size: 1.5rem;
   }
 }
 
-/* Tiny devices */
-@media (max-width: 450px) {
-  .hero-text h1 {
-    font-size: 2.3rem;
+@media (max-width: 480px) {
+  nav {
+    padding: 10px 20px;
   }
-  .hero-text h2 {
-    font-size: 1.5rem;
+
+  nav ul li {
+    margin: 8px 0;
   }
-  .hero-text h3 {
-    font-size: 1rem;
+
+  .hero h1 {
+    font-size: 1.8rem;
   }
-  .heading {
-    font-size: 2.5rem;
+
+  .hero p {
+    font-size: 0.95rem;
   }
-  .about h2,
-  #skills h2,
-  .project h2,
-  .certificates-section .heading,
-  .contact-section h2 {
-    font-size: 2.2rem;
+
+  .profile-img {
+    max-width: 180px;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
   }
 }
