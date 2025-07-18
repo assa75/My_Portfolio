@@ -1,6 +1,9 @@
-/* Basic Reset & General Styles */
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&family=Roboto:wght@400;500&display=swap');
+
+/* Reset & Base Styles */
 * {
-   margin: 0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
@@ -10,152 +13,158 @@
   transition: all 0.2s linear;
 }
 
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Roboto', sans-serif; /* Recommended: Import Roboto from Google Fonts */
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
 }
 
 .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 h1, h2, h3 {
-    color: #333;
-    margin-bottom: 20px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s ease;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #0056b3;
+  color: #0056b3;
 }
 
 .btn {
-    display: inline-block;
-    background: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-align: center;
-    transition: background 0.3s ease;
-    border: none;
-    cursor: pointer;
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  transition: background 0.3s ease;
+  border: none;
+  cursor: pointer;
 }
 
 .btn:hover {
-    background: #0056b3;
+  background: #0056b3;
 }
 
 .btn-small {
-    padding: 8px 15px;
-    font-size: 0.9em;
+  padding: 8px 15px;
+  font-size: 0.9em;
 }
 
 .highlight {
-    color: #007bff; /* Or any accent color you prefer */
+  color: #007bff;
 }
 
 .section {
-    padding: 80px 0;
-    text-align: center;
+  padding: 80px 0;
+  text-align: center;
 }
 
 .bg-light {
-    background-color: #e9ecef;
+  background-color: #e9ecef;
 }
 
 /* Header & Navigation */
 header {
-    /*background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);*/
-    background: #fff;
-    color: #333;
-    padding: 15px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  background: #fff;
+  color: #333;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
+
 .heading {
   font-size: 3.5rem;
   color: rgb(32, 32, 32);
   font-weight: 800;
   text-align: center;
 }
+
 .heading span {
   color: rgb(115, 3, 167);
 }
+
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .logo {
-    font-size: 1.9rem;
-    font-weight: 800;
-    text-decoration: none;
-    color: #0e2431;
+  font-size: 1.9rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: #0e2431;
 }
-.logo:hover{
-    color: #fc8c05;
+
+.logo:hover {
+  color: #fc8c05;
 }
-/*navbar*/
+
 .nav-links {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
+
 .nav-links li {
-   margin-left: 20px;
+  margin-left: 20px;
 }
+
 .nav-links a {
-    color: #333;
-    font-weight: bold;
-    padding: 5px 0;
-    position: relative;
-    font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  padding: 5px 0;
+  position: relative;
+  font-size: 16px;
 }
+
 .nav-links a:hover {
   color: #011aff;
   border-bottom: 0.2rem solid #011aff;
   padding: 0.5rem 0;
 }
-/* navbar ends */
-/* certificates & internships section styling */
+
+/* Certificates & Internships Section */
 .certificates-section {
   padding: 60px 20px;
   background: #f5f7fb;
   text-align: center;
-  height: 700px;
 }
 
 .certificates-section .heading {
-  font-size: 45px;
+  font-size: 4.5rem;
   margin-bottom: 20px;
   color: #333;
 }
 
 .certificates-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-  margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  
-  /*display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px,1fr));*/
+  gap: 30px;
+  margin-top: 40px;
+  justify-content: center;
 }
 
 .certificate-card {
@@ -163,19 +172,15 @@ nav {
   border-radius: 18px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   padding: 20px;
-  width: 270px;
   height: 380px;
-  margin-left: 50px;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  gap: 50px;
 }
 
 .certificate-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 25px rgba(0,0,0,0.2), 0 0 15px #c442d5;
-  /*box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);*/
   border: 1px solid  #c442d5;
 }
 
@@ -203,7 +208,6 @@ nav {
   display: inline-block;
   padding: 8px 16px;
   background: #4e5bd9;
-  /*background: #2506ad;*/
   box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
   color: #fff;
   border-radius: 6px;
@@ -213,10 +217,10 @@ nav {
 }
 
 .certificate-card .btn-small:hover {
-  /*background: #4e5bd9;*/
   background: #1a047e;
 }
-.button{
+
+.button {
   display: inline-block;
   color: #111;
   font-size: 16px;
@@ -224,10 +228,58 @@ nav {
   text-transform: capitalize;
   border: 2px solid black;
   padding: 12px 25px;
-  transition: all .42s ease;
+  transition: all 0.42s ease;
   margin-top: 50px;
 }
-.button:hover{
+
+.button:hover {
   background-color: #000;
-  color:#fff;
+  color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+  html {
+    font-size: 58%;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 10px;
+  }
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+  .certificates-section .heading {
+    font-size: 3.5rem;
+  }
+  .certificate-card {
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 52%;
+  }
+  .logo {
+    font-size: 1.6rem;
+  }
+  .heading {
+    font-size: 2.8rem;
+  }
+  .btn, .btn-small, .button {
+    padding: 8px 12px;
+    font-size: 1.4rem;
+  }
 }
