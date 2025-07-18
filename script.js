@@ -8,6 +8,23 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+const image = document.querySelector(".tilt");
+
+image.addEventListener("mousemove", (e) => {
+  const rect = image.getBoundingClientRect();
+  const x = e.clientX - rect.left; // X position inside the element
+  const y = e.clientY - rect.top;  // Y position inside the element
+
+  const moveX = (x - rect.width / 2) / 15;
+  const moveY = (y - rect.height / 2) / 15;
+
+  image.style.transform = `scale(1.05) translate(${moveX}px, ${moveY}px)`;
+});
+
+image.addEventListener("mouseleave", () => {
+  image.style.transform = "scale(1)";
+});
+
 const image = document.querySelector(".profile-pic");
 
 image.addEventListener("mousemove", (e) => {
@@ -18,7 +35,7 @@ image.addEventListener("mousemove", (e) => {
   const moveX = (x - rect.width / 2) / 15;
   const moveY = (y - rect.height / 2) / 15;
 
-  image.style.transform = 'scale(1.05) translate(${moveX}px, ${moveY}px)';
+  image.style.transform = `scale(1.05) translate(${moveX}px, ${moveY}px)`;
 });
 
 image.addEventListener("mouseleave", () => {
