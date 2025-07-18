@@ -231,3 +231,105 @@ nav {
   background-color: #000;
   color:#fff;
 }
+/* Phones - Small (≤ 480px) */
+@media (max-width: 480px) {
+  html {
+    font-size: 55%;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+  }
+
+  .about-content, .skills-grid, .project-grid, .certificates-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-card {
+    margin-left: 0;
+  }
+
+  .edu-card {
+    height: auto;
+  }
+
+  .contact-form button {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/* Phones - Medium (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  html {
+    font-size: 60%;
+  }
+  .certificate-card{
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .nav-links {
+    flex-direction: row;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .certificate-card {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+/* Small Laptops (1025px - 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .hero-text h1 {
+    font-size: 4rem;
+  }
+  .certificate-card {
+    width: 300px;
+  }
+}
+
+/* Large Screens (1281px and above) */
+@media (min-width: 1281px) {
+  html {
+    font-size: 100%;
+  }
+
+  .container {
+    max-width: 1200px;
+  }
+  .certificate-card {
+    width: 270px;
+  }
+}
