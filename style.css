@@ -137,6 +137,17 @@ nav {
   background: linear-gradient(135deg, #F7FDFD 0%, #0FADA2 100%);
   padding: 100px;
   height: 800px;
+  animation: fadeSlide 0.8s ease-out;
+}
+@keyframes fadeSlide {
+  0%{
+    opacity: 0;
+    transform: scale(0.8) translateY(30px);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
 }
 .hero-content{
   display: flex;
@@ -169,10 +180,12 @@ nav {
   0% {background-position: 0%;}
   100% {background-position: 100%;}
 }
+
   /*color: #fc8c05;*/
 .hero-text h2{
   font-size: 30px;
   margin: 20px 0;
+
 }
 .hero-text h3{
   font-size: 20px;
@@ -213,7 +226,8 @@ nav {
   display: flex;
   gap:20px;
   justify-content: center;
-  margin-top: 30px;
+  /*margin-top: 30px;*/
+
 }
 .btn{
   margin-top: 25rem;
@@ -261,7 +275,7 @@ nav {
     text-align: left;
 }
 .profile-pic {
-  width: 300px;
+  width: 350px;
   height: 450px;
   border-radius: 50%;
   object-fit: cover;
@@ -641,7 +655,7 @@ nav {
   margin-top: 20px;
 }
 .p-button:hover{
-   background-color: #000;
+  background-color: #000;
   color:#fff;
 }
 
@@ -676,7 +690,7 @@ nav {
       padding: 20px;
     }
     .e{
-       text-transform: none;
+      text-transform: none;
     }
     .contact-form input, .contact-form textarea {
       width: 100%;
@@ -685,7 +699,6 @@ nav {
       border: 1px solid #0e0101;
       border-radius: 8px;
       font-size: 20px;
-      text-transform: none;
     }
     .contact-form textarea {
       resize: vertical;
@@ -815,7 +828,7 @@ footer {
   color: #ffae00;
 }
 
-/* Responsive Design */
+/* Responsive Design 
 @media (min-width: 768px) {
     .about-content {
         flex-direction: row;
@@ -834,7 +847,7 @@ footer {
         align-items: center;
         width: 100%;
         margin-top: 10px;
-        display: none; /* Hidden by default, could add a hamburger menu with JS */
+        display: none; /* Hidden by default, could add a hamburger menu with JS 
     }
 
     .nav-links.active {
@@ -865,7 +878,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-/* common media queries starts*/
+/* common media queries starts
 @media (max-width: 450px) {
   html {
     font-size: 55%;
@@ -876,4 +889,163 @@ footer {
   section {
     padding: 2rem;
   }
+}*/
+/* Phones - Small (≤ 480px) */
+@media (max-width: 480px) {
+  html {
+    font-size: 55%;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+  }
+
+  .about-content, .skills-grid, .project-grid, .certificates-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-card {
+    margin-left: 0;
+  }
+
+  .edu-card {
+    height: auto;
+  }
+
+  .contact-form button {
+    margin-left: 0;
+    width: 100%;
+  }
 }
+
+/* Phones - Medium (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  html {
+    font-size: 60%;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    padding: 40px 10px;
+    text-align: center;
+  }
+
+  .image img {
+    margin-left: 0;
+    width: 80%;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+  }
+
+  .certificate-card,
+  .project-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contact-form button {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .nav-links {
+    flex-direction: row;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .certificate-card {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-card {
+    flex-direction: column;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small Laptops (1025px - 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .hero-text h1 {
+    font-size: 4rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .certificate-card {
+    width: 300px;
+  }
+}
+
+/* Large Screens (1281px and above) */
+@media (min-width: 1281px) {
+  html {
+    font-size: 100%;
+  }
+
+  .container {
+    max-width: 1200px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .certificate-card {
+    width: 270px;
+  }
+}
+
