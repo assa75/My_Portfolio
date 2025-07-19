@@ -25,7 +25,8 @@ image.addEventListener("mouseleave", () => {
   image.style.transform = "scale(1)";
 });
 
-const image = document.querySelector(".profile-pic");
+
+const image1 = document.querySelector(".profile-pic");
 
 image.addEventListener("mousemove", (e) => {
   const rect = image.getBoundingClientRect();
@@ -56,7 +57,7 @@ document.addEventListener('visibilitychange',
 
 // <!-- typed js effect starts -->
 const typedText = document.querySelector(".typing-text");
-const phrases = ["Front-End Developer","Back-End Developer", "Coder", "Open Source Contributor","UI/UX Designer"];
+const phrases = ["Front-End Developer","Java Developer", "Coder", "UI/UX Designer"];
 let index = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -123,6 +124,17 @@ filterButtons.forEach(button => {
     });
   });
 });
+
+function toggleMenu() {
+  document.querySelector(".nav-links").classList.toggle("active");
+}
+
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
 
 // Example for a potential mobile navigation toggle (requires a button in HTML)
 // const navToggle = document.querySelector('.nav-toggle'); // You'd add a button with class 'nav-toggle'
