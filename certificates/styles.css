@@ -233,13 +233,3 @@ nav {
   background-color: #000;
   color:#fff;
 }
-@media (max-width: 480px) {
-  .contact-form {
-    padding: 10px;
-  }
-
-  .submit-btn {
-    width: 100%;
-  }
-}
-
