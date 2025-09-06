@@ -225,4 +225,30 @@ nav {
   background-color: #000;
   color:#fff;
 }
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* show hamburger on small screen */
+  }
+
+  .nav-links {
+    display: none; /* hide menu by default */
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 60px;  /* below header */
+    right: 20px;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border-radius: 8px;
+  }
+
+  .nav-links.active {
+    display: flex; /* show when active */
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+   }
 
