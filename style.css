@@ -1212,4 +1212,14 @@ footer {
   color: #ffae00;
 }
 
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 10px;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+}
+
 
