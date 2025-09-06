@@ -142,8 +142,8 @@ nav {
   padding: 60px 20px;
   background: #f5f7fb;
   text-align: center;
-  height: 700px;
-}
+  min-height: 100vh; /* or remove fixed height */
+   }
 
 .certificates-section .heading {
   font-size: 45px;
@@ -260,3 +260,4 @@ nav {
     margin: 15px 0;
   }
 }
+
