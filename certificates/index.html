@@ -86,6 +86,14 @@
  </section>
  <script src="C:\Users\assap\OneDrive\Desktop\Portfolio\script.js"></script>-->
  <a href="https://assa75.github.io/My_Portfolio/" class="button"><i class="fas fa-arrow-left"></i> <b>Back to Home</b></a>
-</body>
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.querySelector(".nav-links");
 
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+</body>
 </html>
+
