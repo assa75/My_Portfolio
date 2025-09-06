@@ -37,6 +37,13 @@ a:hover {
     color: #0056b3;
 }
 
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+}
+
 .btn {
     display: inline-block;
     background: #007bff;
@@ -235,3 +242,4 @@ nav {
     width: 100%;
   }
 }
+
