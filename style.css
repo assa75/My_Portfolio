@@ -1085,7 +1085,6 @@ nav {
   box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
   transition: 0.3s ease;
   font-family: "Nunito", sans-serif;
-  margin-left: 300px;
 }
 
 .contact-form button:hover {
@@ -1212,14 +1211,5 @@ footer {
   color: #ffae00;
 }
 
-@media (max-width: 480px) {
-  .contact-form {
-    padding: 10px;
-  }
-
-  .submit-btn {
-    width: 100%;
-  }
-}
 
 
