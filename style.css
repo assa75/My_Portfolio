@@ -536,7 +536,8 @@ nav {
 }
 
 .skill-card {
-  background: #fff;
+  /* background: #fff; */
+  background: linear-gradient(-45deg, #e0f7fa, #ffe0f0, #fef7e0, #e0ffe8);
   padding: 25px;
   border-radius: 20px;
   width: 120px;
@@ -548,9 +549,12 @@ nav {
 }
 
 .skill-card:hover {
-  transform: translateY(-8px);
+  /* transform: translateY(-8px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2), 0 0 15px #5c6bc0;
-  border: 1px solid #5c6bc0;
+  border: 1px solid #5c6bc0; */
+   transform: translateY(-12px);
+  box-shadow: 0 15px 35px rgba(255,106,0,0.3), 0 0 15px #ff00ff;
+  border: 2px solid #ff6a00;
 }
 
 .skill-card img {
@@ -1210,6 +1214,7 @@ footer {
   border: 0.1rem solid rgb(180, 178, 178);
   color: #ffae00;
 }
+
 
 
 
